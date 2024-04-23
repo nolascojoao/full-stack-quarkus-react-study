@@ -1,8 +1,7 @@
-package com.example.fullstack.services;
+package com.example.fullstack.model.user;
 
 import com.example.fullstack.model.project.Project;
 import com.example.fullstack.model.task.Task;
-import com.example.fullstack.model.user.User;
 import io.quarkus.elytron.security.common.BcryptUtil;
 import io.quarkus.hibernate.reactive.panache.common.WithTransaction;
 import io.smallrye.mutiny.Uni;
