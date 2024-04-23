@@ -21,7 +21,7 @@ public class ProjectService {
         this.userService = userService;
     }
 
-    public Uni<Project> findById(Long id) {
+    public Uni<Project> findById(long id) {
         return userService.getCurrentUser()
                 .chain(user -> Project.<Project>findById(id)
                         .onItem().ifNull().failWith(() -> new ObjectNotFoundException(id, "Project"))
